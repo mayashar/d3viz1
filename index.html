@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cholera d3.js</title>
+    <style>
+        body {
+            font: 12px Arial;
+            margin: 40;
+        }
+
+        path {
+            stroke: steelblue;
+            stroke-width: 3;
+            fill: none;
+        }
+
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: grey;
+            stroke-width: 1;
+            shape-rendering: crispEdges;
+        }
+
+        .axis--x path {
+            display: none;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .d3-tip {
+            line-height: 1;
+            font-weight: bold;
+            padding: 12px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            border-radius: 2px;
+        }
+
+
+
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke: #fff;
+}
+    </style>
+</head>
+
+
+<body>
+<script>
+
+
+
+</script>
+<div class="row">
+    <h2>John Snow's London's 1854 cholera epidemic recreated map using
+        d3.js </h2>
+</div>
+
+<div >
+ <a href="index.html">HOME</a> <a href="about.html">DOCUMENTATION</a>
+</div>
+ 
+
+<h3>Please select</h3>
+<label class='radio-inline'>
+                            <input type="radio" name="gender" value="sex" onclick="deathsGender()">Deaths location by Gender
+                        </label> 
+                        <label class='radio-inline'>
+                            <input type="radio" name="gender" value="age" onclick="deathsAge()">Deaths location by Age group
+                        </label>
+ 
+  
+    <div id="map"><svg id="mylegend" height=400 width=200></svg></div>
+    
+    
+
+<p>Pecentage of deaths by age group</p>
+   <div id="agechart">
+
+   </div>
+
+<p>Number of deaths by gender</p>
+  <div id="genderchart" ></div>
+
+
+
+<script src="d3.v4.js"></script>
+<script type="text/javascript" src="d3_tip.js"></script>
+<script type="text/javascript" src="colors.js"></script>
+<script type="text/javascript" src="agegroup.js"></script>
+<script type="text/javascript" src="map.js"></script>
+<script type="text/javascript" src="gender.js"></script>
+<script type="text/javascript" src="legend.js"></script>
+</body>
+</html>

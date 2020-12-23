@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>cholera epidemic visualization</title>
+    
+</head>
+
+<body>
+<style>
+div.container {
+  border: 1px solid black;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+}
+</style>
+<div class="row">
+   <h2>John Snow's London's 1854 cholera epidemic recreated map using
+        d3.js </h2></div>
+
+<div class="row">
+ <a href="index.html">HOME</a> <a href="video.html">VIDEO</a>
+</div>
+
+ <div class="container">
+ 	
+ 		<p><b>John Snow's London's 1854 cholera epidemic recreated map using d3.js</b><br>
+Maya Sharma 
+Department of Data Science, IUPUI, Indianapolis, Indiana, USA</p>
+<p>Introduction: In 1854 there was cholera epidemic outbreak in Soho, London. Many people died due to the epidemic. Wikipedia says, He was an English physician and a leader in the development of anesthesia and medical hygiene. He is considered one of the founders of modern epidemiology, in part because of his work in tracing the source of a epidemic outbreak which he curtailed by removing the handle of a water pump. He mapped the epidemic after visiting the place communicating with local people in affected area. He used a traditional paper sketch or map to visualize the death location including pumps and number of deaths by gender and age group including data.<br>
+	<img src="original.jpg"/>
+ blog.cdc.gov</p>
+<p>A picture speaks more and clear always and visualization is the best way to communicate and in doing analysis. Various computer programming is used to visualize information and this traditional cholera map too recreated using several tools. This is a recreation of the map using information provided with d3.js implementation.</p>
+Goal of this visualization
+<ul>
+<li>Interactive Line chart with deaths and dates</li>
+<li>Zoomable map with locations, age group and gender</li>
+<li>Chart to show deaths percentage by age and gender group</li>
+</ul>
+<p>
+Data source: https://khreda.com/teaching/2020/H517/project1/<br>
+Design Sketches:<br>
+<img height=20% width=20% src="initial.jpg"/>
+<img height=20% width=20% src="final.jpg"/>
+
+  </p>
+<p>Tools used: D3.js version 4, sublime text, node js server and chrome browser to run and test the visualization.<br>
+Files used: deathdays.csv, pumps.csv, streets.json  and two more csv files created for workhouse and brewery using x and y coordinates.<br>
+Methodology: Given files are loaded and wit the help of JavaScript functions and d3.js library they were linked according to need. Color for gender is taken blue and red for make and female by considering general convention where as color range for age group idea has been taken through color palette through Dataquest page. Interactivity and legend are takes care accordingly.</p>
+<p>Description of the visualization: How many deaths by date occur can be seen hovering over the time line graph dots. Deaths by age range is clearly visible as shown the picture below: <br>
+ <img height=80% width=35% src="1.png"/>
+<img height=80% width=35% src="2.png"/>
+<img height=80% width=35% src="3.png"/>
+<img height=80% width=35% src="4.png"/>
+<img height=80% width=35% src="5.png"/>
+<img height=80% width=35% src="6.png"/><br>
+
+Red dots as female and blue dots as male as well as black dots represent water pumps. Rectangular shapes are taken to show locations for brewery and workhouse in the picture which clearly helps to see death cluster by locations. It is clear here their deaths are more near pump locations which predicts water contamination. Bar charts by age group shows that people of age range more than 80 and between 0-10 (kids) died more than others. The reason may be they staty home and came in contact with pump water more.Other age group shown in bar graph died are less in number in comparison to kids and old aged people. One reason may be that these people remain in school or worksites for most of the time which kept them away from using pump water more.
+</p>
+   
+
+
+References:<br>
+<ul>
+<li>https://en.wikipedia.org/wiki/John_Snow</li>
+<li>https://www.dataquest.io/blog/what-to-consider-when-choosing-colors-for-data-visualization/</li>
+<li>https://www.d3-graph-gallery.com/</li>
+<li>https://bl.ocks.org/mbostock</li>
+<li>https://d3js.org/</li>
+<li>https://gist.github.com/d3noob/257c360b3650b9f0a52dd8257d7a2d73</li>
+<li>https://github.com/dnonatar/1854-cholera-outbreak</li>
+<li>https://khreda.com/teaching/2020/H517/d3-excercises/</li>
+<li>https://github.com/caged/d3-tip/li>
+<li>https://www.dashingd3js.com/svg-paths-and-d3js</li>
+<li>eBooks:<br>
+Scott Murray - Interactive Data Visualization for the Web_ An Introduction to Designing with D3-O’Reilly Media (2017)
+Visualization Analysis & Design Tamara Munzner<br>
+Fullstack Data Visualization with D3 Build Beautiful Data Visualizations and Dashboards with D3 Writen by Amelia Watenberger </li>
+<li>https://eloquentjavascript.net/</li><br>
+<li>https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_sides</li>
+
+
+</ul>
+
+ 	</p>
+ </div>
+    
+
+
+</body>
+</html>
